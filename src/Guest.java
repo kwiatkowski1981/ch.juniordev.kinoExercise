@@ -1,6 +1,6 @@
 public class Guest {
 
-    String firstName1 = "Jan";
-    String lastName1 = "Kowalski";
+    String firstName;           // = "Jan";
+    String lastName;            // = "Kowalski";
     int age;
 }
