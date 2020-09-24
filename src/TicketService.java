@@ -1,16 +1,5 @@
 public class TicketService {
 
-            if (freeSeats == 0) {
-        System.out.println("Brak wolnych miejsc na seans");
-    } else if (age1 < ageRequired) {
-        System.out.println("Film dostępny dla osób powyżej " + ageRequired + " lat");
-    } else {
-        ticket1Id = 1;
-        ticket1PersonData = firstName1 + " " + lastName1;
-        ticket1MovieTitle = "Omen";
-        freeSeats--;
-    }
-
                    if (freeSeats == 0) {
         System.out.println("Brak wolnych miejsc na seans");
     } else if (age2 < ageRequired) {
