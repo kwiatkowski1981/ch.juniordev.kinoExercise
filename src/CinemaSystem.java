@@ -3,6 +3,18 @@ public class CinemaSystem {
 
     public static void main(String[] args) {
 
+        Guest guest1 = new Guest("Jan", "Kowalski", 17);
+        Movie movie1 = new Movie();
+        Ticket ticket1 = new Ticket();
+        Cinema cinema1 = new Cinema();
+
+
+//        Guest guest2 = new Guest("Anna", "Zalewska", 19);
+
+        TicketService ticketService = new TicketService();
+
+        ticketService.createANewTicket(movie1, cinema1, guest1, ticket1);
+        ticketService.printATicket(movie1, cinema1, guest1, ticket1);
     }
 
 

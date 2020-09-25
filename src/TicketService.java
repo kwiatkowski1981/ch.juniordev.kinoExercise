@@ -1,26 +1,28 @@
 public class TicketService {
 
-                   if (freeSeats == 0) {
-        System.out.println("Brak wolnych miejsc na seans");
-    } else if (age2 < ageRequired) {
-        System.out.println("Film dostępny dla osób powyżej " + ageRequired + " lat");
-    } else {
-        ticket2Id = ticket1Id + 1;
-        ticket2PersonData = firstName2 + " " + lastName2;
-        ticket2MovieTitle = "Omen";
-        freeSeats--;
+    public void createANewTicket(Movie movie, Cinema cinema, Guest guest, Ticket ticket) {
+        if (cinema.freeSeats == 0) {
+            System.out.println("No seats available for the screening");
+        } else if (guest.age < movie.ageRequired) {
+            System.out.println("The movie is available to people above " + movie.ageRequired + " years");
+        } else {
+            ticket.ticketId = ticket.ticketId + 1;
+            ticket.ticketPersonData = guest.firstName + " " + guest.lastName;
+            ticket.ticketMovieTitle = "Omen";
+            cinema.freeSeats--;
+        }
     }
 
-        System.out.println("Sprzedane bilety");
-        if (ticket1Id != 0) {
-        System.out.println(ticket1Id + " | " + ticket1PersonData + " | " + ticket1MovieTitle + " - " + movieType + " - " + movieTime + "min");
-    }
-        if (ticket2Id != 0) {
-        System.out.println(ticket2Id + " | " + ticket2PersonData + " | " + ticket2MovieTitle + " - " + movieType + " - " + movieTime + "min");
-    }
+    public void printATicket(Movie movie, Cinema cinema, Guest guest, Ticket ticket) {
 
-        System.out.println("Liczba pozostałych miejsc: " + freeSeats);
-        System.out.println("Liczba sprzedanych biletów: " + (maxSeats - freeSeats));
+        System.out.println("Tickets sold");
+        if (ticket.ticketId != 0) {
+            System.out.println(ticket.ticketId + " | " + ticket.ticketPersonData + " | " + ticket.ticketMovieTitle
+                    + " - " + movie.movieType + " - " + movie.movieTime + "min");
+        }
+        System.out.println("Number of remaining seats: " + cinema.freeSeats);
+        System.out.println("Number of tickets sold: " + (cinema.maxSeats - cinema.freeSeats));
+    }
 }
 
 
