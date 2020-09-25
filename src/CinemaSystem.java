@@ -23,7 +23,6 @@ public class CinemaSystem {
         ticketService.printATicket(movie2, cinema2, guest2, ticket2);
     }
 
-
 //    public static void main(String[] args) {
 //        String movieTitle = "Omen";
 //        String movieType = "horror";

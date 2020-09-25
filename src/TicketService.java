@@ -12,7 +12,6 @@ public class TicketService {
             cinema.freeSeats--;
         }
     }
-
     public void printATicket(Movie movie, Cinema cinema, Guest guest, Ticket ticket) {
 
         System.out.println("Tickets sold");

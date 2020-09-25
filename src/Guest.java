@@ -9,7 +9,6 @@ public class Guest {
         this.lastName = lastName;
         this.age = age;
     }
-
     public String personData(Guest guest){
 
         return "Firstname: " + firstName + " Lastname " + lastName;

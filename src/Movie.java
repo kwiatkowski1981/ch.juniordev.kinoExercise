@@ -11,7 +11,6 @@ public class Movie {
 //        this.movieTime = movieTime;
 //        this.ageRequired = ageRequired;
 //    }
-
     public void  movieDescription(){
         System.out.println("movie: " + movieTitle + ", movie type: " + movieType
                 + ", movie Time: " + movieTime + ", age required: " + ageRequired );
