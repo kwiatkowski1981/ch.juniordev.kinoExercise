@@ -3,7 +3,7 @@ public class CinemaSystem {
 
     public static void main(String[] args) {
 
-        Guest guest1 = new Guest("Jan", "Kowalski", 15);
+        Guest guest1 = new Guest("Jan", "Kowalski", 17);
         Movie movie1 = new Movie();
         Ticket ticket1 = new Ticket();
         Cinema cinema1 = new Cinema();
@@ -14,14 +14,24 @@ public class CinemaSystem {
         ticketService.printATicket(movie1, cinema1, guest1, ticket1);
 
 
-        Guest guest2 = new Guest("Anna", "Zalewska", 19);
-        Movie movie2 = new Movie();
-        Ticket ticket2 = new Ticket();
-        Cinema cinema2 = new Cinema();
 
-        ticketService.createANewTicket(movie2, cinema2, guest2, ticket2);
-        ticketService.printATicket(movie2, cinema2, guest2, ticket2);
+        Guest guest2 = new Guest("Anna", "Zalewska", 19);
+        Ticket ticket2 = new Ticket();
+
+        ticketService.createANewTicket(movie1, cinema1, guest2, ticket2);
+        ticketService.printATicket(movie1, cinema1, guest2, ticket2);
+
+
+
+        Guest guest3 = new Guest("Michael", "Jordan", 54);
+        Ticket ticket3 = new Ticket();
+
+        ticketService.createANewTicket(movie1, cinema1, guest3, ticket3);
+        ticketService.printATicket(movie1, cinema1, guest3, ticket3);
+
     }
+
+
 
 //    public static void main(String[] args) {
 //        String movieTitle = "Omen";
