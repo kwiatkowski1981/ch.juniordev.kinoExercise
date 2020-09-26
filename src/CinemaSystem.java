@@ -8,26 +8,29 @@ public class CinemaSystem {
         Ticket ticket1 = new Ticket();
         Cinema cinema1 = new Cinema();
 
-        TicketService ticketService = new TicketService();
+        TicketCreateService ticketCreateService = new TicketCreateService();
+        TicketPrintService ticketPrintService = new TicketPrintService();
 
-        ticketService.createANewTicket(movie1, cinema1, guest1, ticket1);
-        ticketService.printATicket(movie1, cinema1, ticket1);
 
+        ticketCreateService.createANewTicket(movie1, cinema1, guest1, ticket1);
+        ticketPrintService.printATicket(movie1, ticket1);
+        ticketPrintService.cinemaSitsService(cinema1);
 
 
         Guest guest2 = new Guest("Anna", "Zalewska", 19);
         Ticket ticket2 = new Ticket();
 
-        ticketService.createANewTicket(movie1, cinema1, guest2, ticket2);
-        ticketService.printATicket(movie1, cinema1, ticket2);
-
+        ticketCreateService.createANewTicket(movie1, cinema1, guest2, ticket2);
+        ticketPrintService.printATicket(movie1, ticket2);
+        ticketPrintService.cinemaSitsService(cinema1);
 
 
         Guest guest3 = new Guest("Michael", "Jordan", 54);
         Ticket ticket3 = new Ticket();
 
-        ticketService.createANewTicket(movie1, cinema1, guest3, ticket3);
-        ticketService.printATicket(movie1, cinema1, ticket3);
+        ticketCreateService.createANewTicket(movie1, cinema1, guest3, ticket3);
+        ticketPrintService.printATicket(movie1, ticket3);
+        ticketPrintService.cinemaSitsService(cinema1);
 
     }
 
