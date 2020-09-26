@@ -12,11 +12,12 @@ public class TicketService {
             cinema.setFreeSits(cinema.getFreeSits() -1);
         }
     }
-    public void printATicket(Movie movie, Cinema cinema, Guest guest, Ticket ticket) {
+    public void printATicket(Movie movie, Cinema cinema, Ticket ticket) {
 
         System.out.println("Tickets sold");
         if (ticket.getTicketId() != 0) {
-            System.out.println(ticket.getTicketId() + " | " + ticket.getTicketPersonData() + " | " + ticket.getTicketMovieTitle()
+            System.out.println(ticket.getTicketId() + " | " + ticket.getTicketPersonData()
+                    + " | " + ticket.getTicketMovieTitle()
                     + " - " + movie.getMovieType() + " - " + movie.getMovieTime() + "min");
         }
         System.out.println("Number of remaining seats: " + cinema.getFreeSits());

@@ -11,7 +11,7 @@ public class CinemaSystem {
         TicketService ticketService = new TicketService();
 
         ticketService.createANewTicket(movie1, cinema1, guest1, ticket1);
-        ticketService.printATicket(movie1, cinema1, guest1, ticket1);
+        ticketService.printATicket(movie1, cinema1, ticket1);
 
 
 
@@ -19,7 +19,7 @@ public class CinemaSystem {
         Ticket ticket2 = new Ticket();
 
         ticketService.createANewTicket(movie1, cinema1, guest2, ticket2);
-        ticketService.printATicket(movie1, cinema1, guest2, ticket2);
+        ticketService.printATicket(movie1, cinema1, ticket2);
 
 
 
@@ -27,7 +27,7 @@ public class CinemaSystem {
         Ticket ticket3 = new Ticket();
 
         ticketService.createANewTicket(movie1, cinema1, guest3, ticket3);
-        ticketService.printATicket(movie1, cinema1, guest3, ticket3);
+        ticketService.printATicket(movie1, cinema1, ticket3);
 
     }
 
