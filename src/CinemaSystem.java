@@ -11,7 +11,6 @@ public class CinemaSystem {
         TicketCreateService ticketCreateService = new TicketCreateService();
         TicketPrintService ticketPrintService = new TicketPrintService();
 
-
         ticketCreateService.createANewTicket(movie1, cinema1, guest1, ticket1);
         ticketPrintService.printATicket(movie1, ticket1);
         ticketPrintService.cinemaSitsService(cinema1);

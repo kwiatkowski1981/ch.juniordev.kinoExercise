@@ -24,9 +24,11 @@ public class Ticket {
         return ticketId;
     }
 
+
     public void setTicketId(int ticketId) {
         this.ticketId = ticketId;
     }
+
 
     //    public Ticket(String ticketPersonData, String ticketMovieTitle, int ticketId) {
 //        this.ticketPersonData = ticketPersonData;

@@ -6,11 +6,17 @@ public class TicketCreateService {
         } else if (guest.getAge() < movie.getAgeRequired()) {
             System.out.println("The movie is available to people above " + movie.getAgeRequired() + " years");
         } else {
-            ticket.setTicketId(ticket.getTicketId() + 1);
+            ticket.setTicketId(ticket.getTicketId() +1);
             ticket.setTicketPersonData(guest.getFirstName() + " " + guest.getLastName());
             ticket.setTicketMovieTitle(movie.getMovieTitle());
             cinema.setFreeSits(cinema.getFreeSits() -1);
         }
+
+
+
+
+
+
     }
 
 

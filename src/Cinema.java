@@ -19,6 +19,8 @@ public class Cinema {
         this.freeSits = freeSits;
     }
 
+
+
     //    public Cinema(int maxSeats, int freeSeats) {
 //        this.maxSeats = maxSeats;
 //        this.freeSeats = freeSeats;
